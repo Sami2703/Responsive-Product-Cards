@@ -1,0 +1,23 @@
+/* .products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+} */
+
+.products {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* @media (max-width: 768px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+} */
